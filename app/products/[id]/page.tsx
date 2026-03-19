@@ -25,7 +25,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <Link
           href="/products"
-          className="inline-flex items-center text-blue-600 hover:text-blue-700 mb-8 font-medium"
+          className="inline-flex items-center text-[#56B7E6] hover:text-[#3A9BC8] mb-8 font-medium transition-colors"
         >
           <svg
             className="w-5 h-5 mr-2"
@@ -43,20 +43,21 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           Back to Products
         </Link>
 
-        <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <div className="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-200">
           <div className="lg:grid lg:grid-cols-2 lg:gap-8">
-            <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
+            <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-gray-100">
               {product.image ? (
                 <img
                   src={product.image}
                   alt={product.name}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               ) : (
-                <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 min-h-[400px]">
+                <div className="w-full h-full flex items-center justify-center bg-gray-100 min-h-[400px]">
                   <div className="text-center">
                     <svg
-                      className="w-32 h-32 mx-auto text-blue-400 mb-4"
+                      className="w-32 h-32 mx-auto text-gray-400 mb-4"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -76,7 +77,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
 
             <div className="p-8 lg:p-12">
               <div className="mb-4">
-                <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider">
+                <span className="text-sm font-semibold text-[#56B7E6] uppercase tracking-wider">
                   {product.category}
                 </span>
               </div>
@@ -88,16 +89,16 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               </div>
 
               <div className="prose prose-lg mb-8">
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed">
                   {product.longDescription}
                 </p>
               </div>
 
               <div className="space-y-4">
-                <button className="w-full bg-blue-600 text-white py-4 px-6 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 font-semibold text-lg transition-colors">
+                <button className="w-full bg-[#56B7E6] text-white py-4 px-6 rounded-md hover:bg-[#3A9BC8] focus:outline-none focus:ring-2 focus:ring-[#56B7E6] focus:ring-offset-2 font-medium text-lg transition-all shadow-sm hover:shadow-md">
                   Add to Cart
                 </button>
-                <button className="w-full bg-gray-100 text-gray-700 py-4 px-6 rounded-lg hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2 font-semibold text-lg transition-colors">
+                <button className="w-full bg-white text-[#56B7E6] border-2 border-[#56B7E6] py-4 px-6 rounded-md hover:bg-[#E8F4F9] focus:outline-none focus:ring-2 focus:ring-[#56B7E6] focus:ring-offset-2 font-medium text-lg transition-all">
                   Learn More
                 </button>
               </div>
@@ -109,7 +110,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5"
+                      className="w-5 h-5 text-[#56B7E6] mr-2 flex-shrink-0 mt-0.5"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -119,11 +120,11 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span>Eco-friendly and sustainable</span>
+                    <span>Adaptive and accessible design</span>
                   </li>
                   <li className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5"
+                      className="w-5 h-5 text-[#56B7E6] mr-2 flex-shrink-0 mt-0.5"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -137,7 +138,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                   </li>
                   <li className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5"
+                      className="w-5 h-5 text-[#56B7E6] mr-2 flex-shrink-0 mt-0.5"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >

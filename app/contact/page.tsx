@@ -12,20 +12,20 @@ export default function ContactPage() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-white rounded-2xl shadow-lg p-8">
+          <div className="bg-white rounded-lg shadow-sm p-8 border border-gray-200">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h2>
             <div className="space-y-6">
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Email</h3>
-                <p className="text-gray-700">hello@spoon.com</p>
+                <p className="text-gray-600">hello@spoon.com</p>
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Phone</h3>
-                <p className="text-gray-700">(555) 123-4567</p>
+                <p className="text-gray-600">(555) 123-4567</p>
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Address</h3>
-                <p className="text-gray-700">
+                <p className="text-gray-600">
                   123 Sustainability Street<br />
                   Green City, GC 12345<br />
                   United States
@@ -33,7 +33,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Hours</h3>
-                <p className="text-gray-700">
+                <p className="text-gray-600">
                   Monday - Friday: 9:00 AM - 6:00 PM<br />
                   Saturday: 10:00 AM - 4:00 PM<br />
                   Sunday: Closed
@@ -42,7 +42,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8">
+          <div className="bg-white rounded-lg shadow-sm p-8 border border-gray-200">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h2>
             <ContactForm />
           </div>

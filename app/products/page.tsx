@@ -10,7 +10,7 @@ export default function ProductsPage() {
             Our Products
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Discover our carefully curated selection of eco-friendly and sustainable products designed to make a positive impact.
+            Discover our carefully curated selection of adaptable, easy-to-use tools designed to make a positive impact.
           </p>
         </div>
         

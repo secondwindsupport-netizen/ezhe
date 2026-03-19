@@ -46,7 +46,7 @@ export default function DonationForm() {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
       <div>
-        <label className="block text-sm font-medium text-gray-700 mb-4">
+        <label className="block text-sm font-medium text-gray-900 mb-4">
           Donation Amount *
         </label>
         <div className="grid grid-cols-3 gap-3 mb-4">
@@ -55,10 +55,10 @@ export default function DonationForm() {
               key={amount}
               type="button"
               onClick={() => handlePresetClick(amount)}
-              className={`py-3 px-4 rounded-md border-2 font-medium transition-colors ${
+              className={`py-3 px-4 rounded-md border-2 font-medium transition-all ${
                 selectedAmount === amount && !customAmount
-                  ? "border-blue-600 bg-blue-50 text-blue-700"
-                  : "border-gray-300 text-gray-700 hover:border-blue-400"
+                  ? "border-[#56B7E6] bg-[#E8F4F9] text-[#56B7E6] shadow-sm"
+                  : "border-gray-300 text-gray-700 hover:border-[#56B7E6] bg-white"
               }`}
             >
               ${amount}
@@ -76,9 +76,9 @@ export default function DonationForm() {
                 setSelectedAmount("");
               }
             }}
-            className="rounded border-gray-300"
+            className="rounded border-gray-300 text-[#56B7E6] focus:ring-[#56B7E6]"
           />
-          <label htmlFor="customAmount" className="text-sm text-gray-700">
+          <label htmlFor="customAmount" className="text-sm text-gray-600">
             Enter custom amount
           </label>
         </div>
@@ -93,7 +93,7 @@ export default function DonationForm() {
                 required: customAmount ? "Please enter an amount" : false,
                 min: { value: 1, message: "Minimum donation is $1" },
               })}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#56B7E6] focus:border-[#56B7E6] bg-white"
             />
             {errors.customAmount && (
               <p className="mt-1 text-sm text-red-600">
@@ -110,7 +110,7 @@ export default function DonationForm() {
       <div>
         <label
           htmlFor="name"
-          className="block text-sm font-medium text-gray-700 mb-2"
+          className="block text-sm font-medium text-gray-900 mb-2"
         >
           Name *
         </label>
@@ -118,7 +118,7 @@ export default function DonationForm() {
           type="text"
           id="name"
           {...register("name", { required: "Name is required" })}
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#56B7E6] focus:border-[#56B7E6] bg-white"
         />
         {errors.name && (
           <p className="mt-1 text-sm text-red-600">{errors.name.message}</p>
@@ -128,7 +128,7 @@ export default function DonationForm() {
       <div>
         <label
           htmlFor="email"
-          className="block text-sm font-medium text-gray-700 mb-2"
+          className="block text-sm font-medium text-gray-900 mb-2"
         >
           Email *
         </label>
@@ -142,7 +142,7 @@ export default function DonationForm() {
               message: "Invalid email address",
             },
           })}
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#56B7E6] focus:border-[#56B7E6] bg-white"
         />
         {errors.email && (
           <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
@@ -152,7 +152,7 @@ export default function DonationForm() {
       <div>
         <label
           htmlFor="message"
-          className="block text-sm font-medium text-gray-700 mb-2"
+          className="block text-sm font-medium text-gray-900 mb-2"
         >
           Message (Optional)
         </label>
@@ -160,14 +160,14 @@ export default function DonationForm() {
           id="message"
           rows={4}
           {...register("message")}
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#56B7E6] focus:border-[#56B7E6] bg-white"
           placeholder="Add a personal message with your donation..."
         />
       </div>
 
       <button
         type="submit"
-        className="w-full bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 font-medium transition-colors"
+        className="w-full bg-[#56B7E6] text-white py-3 px-6 rounded-md hover:bg-[#3A9BC8] focus:outline-none focus:ring-2 focus:ring-[#56B7E6] focus:ring-offset-2 font-medium transition-all shadow-sm hover:shadow-md"
       >
         Continue to Payment
       </button>

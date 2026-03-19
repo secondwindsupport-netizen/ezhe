@@ -8,19 +8,20 @@ interface ProductCardProps {
 export default function ProductCard({ product }: ProductCardProps) {
   return (
     <Link href={`/products/${product.id}`}>
-      <div className="group bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer border border-gray-100">
-        <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
+      <div className="group bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer border border-gray-200">
+        <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-gray-100">
           {product.image ? (
             <img
               src={product.image}
               alt={product.name}
               className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+              loading="lazy"
             />
           ) : (
-            <div className="w-full h-64 flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100">
+            <div className="w-full h-64 flex items-center justify-center bg-gray-100">
               <div className="text-center">
                 <svg
-                  className="w-20 h-20 mx-auto text-blue-400 mb-2"
+                  className="w-20 h-20 mx-auto text-gray-400 mb-2"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -40,7 +41,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         <div className="p-6">
           <div className="flex items-center justify-between mb-2">
             {product.category && (
-              <span className="text-xs font-semibold text-blue-600 uppercase tracking-wider">
+              <span className="text-xs font-semibold text-[#56B7E6] uppercase tracking-wider">
                 {product.category}
               </span>
             )}
@@ -48,13 +49,13 @@ export default function ProductCard({ product }: ProductCardProps) {
               ${product.price.toFixed(2)}
             </span>
           </div>
-          <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+          <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-[#56B7E6] transition-colors">
             {product.name}
           </h3>
           <p className="text-gray-600 text-sm leading-relaxed line-clamp-2 mb-4">
             {product.description}
           </p>
-          <div className="flex items-center text-blue-600 font-medium text-sm group-hover:translate-x-1 transition-transform">
+          <div className="flex items-center text-[#56B7E6] font-medium text-sm group-hover:translate-x-1 transition-transform">
             Learn more
             <svg
               className="w-4 h-4 ml-1"

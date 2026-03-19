@@ -9,42 +9,39 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 space-y-8">
+        <div className="bg-white rounded-lg shadow-sm p-8 md:p-12 space-y-8 border border-gray-200">
           <section>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Mission</h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              At Spoon, we believe in making sustainability accessible to everyone. Our mission is to provide high-quality, eco-friendly products that help individuals and families reduce their environmental footprint without compromising on convenience or style.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed mt-4">
-              We carefully curate each product in our catalog, ensuring they meet our strict standards for environmental impact, quality, and usability. Every purchase you make helps support our mission to create a more sustainable future.
+            <p className="text-lg text-gray-600 leading-relaxed">
+              Our mission is to create simple, versatile adaptive tools that move with the body. Through customizable design and multiple levels of support, we empower individuals to engage more freely and independently.
             </p>
           </section>
 
           <section>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Values</h2>
             <div className="grid md:grid-cols-2 gap-6 mt-6">
-              <div className="p-6 bg-blue-50 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Sustainability</h3>
-                <p className="text-gray-700">
-                  We prioritize products that have a minimal environmental impact and are made from sustainable, renewable materials.
+              <div className="p-6 bg-[#E8F4F9] rounded-lg border border-gray-200">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Innovation</h3>
+                <p className="text-gray-600">
+                  We continuously develop and refine adaptive tools that meet the evolving needs of our community.
                 </p>
               </div>
-              <div className="p-6 bg-green-50 rounded-lg">
+              <div className="p-6 bg-[#E8F4F9] rounded-lg border border-gray-200">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Quality</h3>
-                <p className="text-gray-700">
+                <p className="text-gray-600">
                   All our products undergo rigorous quality testing to ensure they meet the highest standards of durability and performance.
                 </p>
               </div>
-              <div className="p-6 bg-indigo-50 rounded-lg">
+              <div className="p-6 bg-[#E8F4F9] rounded-lg border border-gray-200">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Transparency</h3>
-                <p className="text-gray-700">
+                <p className="text-gray-600">
                   We believe in complete transparency about our products, sourcing, and business practices. You deserve to know what you're buying.
                 </p>
               </div>
-              <div className="p-6 bg-purple-50 rounded-lg">
+              <div className="p-6 bg-[#E8F4F9] rounded-lg border border-gray-200">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Accessibility</h3>
-                <p className="text-gray-700">
-                  Sustainable living shouldn't be a luxury. We work to make eco-friendly products affordable and accessible to everyone.
+                <p className="text-gray-600">
+                  We work to make adaptive tools affordable and accessible to everyone, regardless of ability or background.
                 </p>
               </div>
             </div>
@@ -52,29 +49,29 @@ export default function AboutPage() {
 
           <section>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Story</h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Spoon was founded with a simple vision: to make it easier for people to make sustainable choices in their everyday lives. We started as a small team passionate about environmental conservation and have grown into a trusted source for eco-friendly products.
+            <p className="text-lg text-gray-600 leading-relaxed">
+              Spoon was founded with a simple vision: to create adaptive tools that empower individuals to engage more freely and independently. We started as a small team passionate about accessibility and have grown into a trusted source for innovative adaptive products.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed mt-4">
-              Today, we work with suppliers who share our values and are committed to creating products that benefit both people and the planet. We're constantly expanding our catalog and improving our offerings based on customer feedback and environmental research.
+            <p className="text-lg text-gray-600 leading-relaxed mt-4">
+              Today, we work with partners who share our values and are committed to creating products that benefit individuals across all abilities. We're constantly expanding our catalog and improving our offerings based on user feedback and research.
             </p>
           </section>
 
           <section className="pt-8 border-t border-gray-200">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Get Involved</h2>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            <p className="text-lg text-gray-600 leading-relaxed mb-6">
               Want to learn more or get involved? We'd love to hear from you! Check out our products, reach out through our contact page, or consider making a donation to support our mission.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="/products"
-                className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 font-medium transition-colors text-center"
+                className="bg-[#56B7E6] text-white px-6 py-3 rounded-md hover:bg-[#3A9BC8] focus:outline-none focus:ring-2 focus:ring-[#56B7E6] focus:ring-offset-2 font-medium transition-all shadow-sm hover:shadow-md text-center"
               >
                 Browse Products
               </a>
               <a
                 href="/contact"
-                className="bg-white text-blue-600 border-2 border-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 font-medium transition-colors text-center"
+                className="bg-white text-[#56B7E6] border-2 border-[#56B7E6] px-6 py-3 rounded-md hover:bg-[#E8F4F9] focus:outline-none focus:ring-2 focus:ring-[#56B7E6] focus:ring-offset-2 font-medium transition-all text-center"
               >
                 Contact Us
               </a>

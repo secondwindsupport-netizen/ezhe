@@ -29,7 +29,7 @@ export default function ContactForm() {
       <div>
         <label
           htmlFor="name"
-          className="block text-sm font-medium text-gray-700 mb-2"
+          className="block text-sm font-medium text-gray-900 mb-2"
         >
           Name *
         </label>
@@ -37,7 +37,7 @@ export default function ContactForm() {
           type="text"
           id="name"
           {...register("name", { required: "Name is required" })}
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#56B7E6] focus:border-[#56B7E6] bg-white"
         />
         {errors.name && (
           <p className="mt-1 text-sm text-red-600">{errors.name.message}</p>
@@ -47,7 +47,7 @@ export default function ContactForm() {
       <div>
         <label
           htmlFor="email"
-          className="block text-sm font-medium text-gray-700 mb-2"
+          className="block text-sm font-medium text-gray-900 mb-2"
         >
           Email *
         </label>
@@ -61,7 +61,7 @@ export default function ContactForm() {
               message: "Invalid email address",
             },
           })}
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#56B7E6] focus:border-[#56B7E6] bg-white"
         />
         {errors.email && (
           <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
@@ -71,7 +71,7 @@ export default function ContactForm() {
       <div>
         <label
           htmlFor="subject"
-          className="block text-sm font-medium text-gray-700 mb-2"
+          className="block text-sm font-medium text-gray-900 mb-2"
         >
           Subject *
         </label>
@@ -79,7 +79,7 @@ export default function ContactForm() {
           type="text"
           id="subject"
           {...register("subject", { required: "Subject is required" })}
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#56B7E6] focus:border-[#56B7E6] bg-white"
         />
         {errors.subject && (
           <p className="mt-1 text-sm text-red-600">{errors.subject.message}</p>
@@ -89,7 +89,7 @@ export default function ContactForm() {
       <div>
         <label
           htmlFor="message"
-          className="block text-sm font-medium text-gray-700 mb-2"
+          className="block text-sm font-medium text-gray-900 mb-2"
         >
           Message *
         </label>
@@ -97,7 +97,7 @@ export default function ContactForm() {
           id="message"
           rows={6}
           {...register("message", { required: "Message is required" })}
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#56B7E6] focus:border-[#56B7E6] bg-white"
         />
         {errors.message && (
           <p className="mt-1 text-sm text-red-600">{errors.message.message}</p>
@@ -106,7 +106,7 @@ export default function ContactForm() {
 
       <button
         type="submit"
-        className="w-full bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 font-medium transition-colors"
+        className="w-full bg-[#56B7E6] text-white py-3 px-6 rounded-md hover:bg-[#3A9BC8] focus:outline-none focus:ring-2 focus:ring-[#56B7E6] focus:ring-offset-2 font-medium transition-all shadow-sm hover:shadow-md"
       >
         Send Message
       </button>
