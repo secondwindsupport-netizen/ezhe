@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Second Wind</title>
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
-<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="shortcut icon" href="/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
@@ -169,6 +169,7 @@
   }
   .products-grid {
     display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem;
+    max-width: 1120px; margin: 0 auto;
   }
   .card {
     background:white; border-radius:10px; padding:1.75rem;
@@ -185,7 +186,7 @@
   }
   .card-desc { font-size:0.88rem; color:var(--text-mid); line-height:1.75; }
   .how { padding:6rem 5rem; background:white; }
-  .pillars { display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; margin-top:2.75rem; }
+  .pillars { display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; margin:2.75rem auto 0; max-width: 1120px; }
   .pillar { padding:2rem 1.5rem; border-radius:10px; background:var(--green-pale); text-align:center; }
   .pillar-icon {
     width: 52px; height: 52px; margin: 0 auto 0.9rem;
@@ -349,7 +350,7 @@
     <li><a href="#products">Our Tools</a></li>
     <li><a href="#how">Why It Works</a></li>
     <li><a href="#about">About Us</a></li>
-    <li><a href="get-involved.html" class="nav-cta">Get Involved</a></li>
+    <li><a href="/get-involved.html" class="nav-cta">Get Involved</a></li>
   </ul>
   <button class="hamburger" id="hamburger" aria-label="Menu">
     <span></span><span></span><span></span>
@@ -359,11 +360,11 @@
   <a href="#products">Our Tools</a>
   <a href="#how">Why It Works</a>
   <a href="#about">About Us</a>
-  <a href="get-involved.html" class="mobile-cta">Get Involved</a>
+  <a href="/get-involved.html" class="mobile-cta">Get Involved</a>
 </div>
 
 <section class="hero" id="home">
-  <img class="hero-bg" src="images/hero-home.png" alt="Nurse giving a high five to a young patient"/>
+  <img class="hero-bg" src="/images/hero-home.png" alt="Nurse giving a high five to a young patient"/>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <h1 class="hero-h1">Music belongs<br>to <em>every</em> patient,<br>in every room.</h1>
@@ -426,21 +427,21 @@
   <div class="pillars">
     <div class="pillar fade-up">
       <div class="pillar-icon" aria-hidden="true">
-        <img src="images/music-note.svg" alt="">
+        <img src="/images/music-note.svg" alt="">
       </div>
       <div class="pillar-title">Music Heals</div>
       <p class="pillar-text">Music therapy reduces anxiety, lifts mood, and supports recovery. Our tools make it possible for any patient, not just those healthy enough to leave their room.</p>
     </div>
     <div class="pillar fade-up">
       <div class="pillar-icon" aria-hidden="true">
-        <img src="images/health-and-safety.svg" alt="">
+        <img src="/images/health-and-safety.svg" alt="">
       </div>
       <div class="pillar-title">Safety First</div>
       <p class="pillar-text">Every device is designed with infection control in mind: from built-in filters to swap-out trays. Playing music should never come at a clinical cost.</p>
     </div>
     <div class="pillar fade-up">
       <div class="pillar-icon" aria-hidden="true">
-        <img src="images/accessible-forward.svg" alt="">
+        <img src="/images/accessible-forward.svg" alt="">
       </div>
       <div class="pillar-title">For Every Body</div>
       <p class="pillar-text">Whether a patient has limited grip, uses a wheelchair, or is in full isolation, our adaptive tools are built so everyone can take part.</p>
@@ -481,7 +482,7 @@
   <h2 class="cta-h2">Help us bring music<br>to every patient room.</h2>
   <p class="cta-p">Whether you're a healthcare provider, music therapist, engineer, or supporter. There's a place for you. Reach out to learn more, volunteer, or bring our tools to your institution.</p>
   <div class="cta-btns">
-    <a href="get-involved.html" class="btn-white">Get Involved</a>
+    <a href="/get-involved.html" class="btn-white">Get Involved</a>
     <a href="#products" class="btn-ghost">See Our Tools</a>
   </div>
 </section>
@@ -515,7 +516,7 @@
     <div class="footer-col-title">Contact</div>
     <ul class="footer-links">
       <li><a href="mailto:contact@secondwind.info">contact@secondwind.info</a></li>
-      <li><a href="get-involved.html">Get Involved</a></li>
+      <li><a href="/get-involved.html">Get Involved</a></li>
     </ul>
   </div>
 </footer>
