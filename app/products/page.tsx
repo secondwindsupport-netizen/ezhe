@@ -14,9 +14,14 @@ export default function ProductsPage() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mx-auto flex max-w-[1120px] flex-wrap justify-center gap-5">
           {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <div
+              key={product.id}
+              className="w-full md:w-[calc(50%-0.625rem)] lg:w-[calc((100%-2.5rem)/3)]"
+            >
+              <ProductCard product={product} />
+            </div>
           ))}
         </div>
       </div>

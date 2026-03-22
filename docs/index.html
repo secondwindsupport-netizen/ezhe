@@ -168,8 +168,17 @@
     text-transform: uppercase;
   }
   .products-grid {
-    display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem;
-    max-width: 1120px; margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+  .products-grid .card {
+    flex: 0 1 calc((100% - 2 * 1.25rem) / 3);
+    min-width: 0;
+    max-width: calc((100% - 2 * 1.25rem) / 3);
   }
   .card {
     background:white; border-radius:10px; padding:1.75rem;
@@ -329,7 +338,8 @@
     .hamburger { display:flex; }
     .hero-content { padding:3rem 1.5rem; }
     .mission, .products, .how, .about, .cta { padding:4rem 1.5rem; }
-    .products-grid, .pillars { grid-template-columns:1fr; }
+    .products-grid .card { flex: 1 1 100%; max-width: none; }
+    .pillars { grid-template-columns:1fr; }
     .about { grid-template-columns:1fr; gap:2.5rem; }
     footer { grid-template-columns:1fr 1fr; padding:3rem 1.5rem; }
     .footer-bottom { flex-direction:column; gap:0.4rem; text-align:center; padding:1.25rem 1.5rem; }
@@ -403,11 +413,13 @@
       <h3 class="card-name">Slide Whistle</h3>
       <p class="card-desc">A super easy instrument: just blow and slide! A plunger changes the pitch so you can play a full octave of notes. No musical experience needed.</p>
     </div>
+    <!-- Guitar Mask Holder temporarily hidden
     <div class="card fade-up tool-card" id="tool-guitar-mask-holder" data-title="Guitar Mask Holder" role="button" tabindex="0">
       <div class="card-stripe stripe-blue"></div>
       <h3 class="card-name">Guitar Mask Holder</h3>
       <p class="card-desc">Clips onto a guitar to cover the soundhole with a protective mask, so musicians can play safely in any clinical environment without spreading particles.</p>
     </div>
+    -->
     <div class="card fade-up tool-card" id="tool-kazoo-patient" data-image="images/kazoo-patient.png" data-title="Kazoo: Patient" role="button" tabindex="0">
       <div class="card-stripe stripe-blue"></div>
       <h3 class="card-name">Kazoo: Patient</h3>
@@ -500,7 +512,7 @@
       <li><a href="#tool-grip-assist">Grip Assist</a></li>
       <li><a href="#tool-grip-assist-extended">Grip Assist Extended</a></li>
       <li><a href="#tool-slide-whistle">Slide Whistle</a></li>
-      <li><a href="#tool-guitar-mask-holder">Guitar Mask Holder</a></li>
+      <!-- <li><a href="#tool-guitar-mask-holder">Guitar Mask Holder</a></li> -->
       <li><a href="#tool-kazoo-patient">Kazoo (Patient)</a></li>
       <li><a href="#tool-kazoo-provider">Kazoo (Provider)</a></li>
     </ul>
